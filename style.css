@@ -1,0 +1,206 @@
+
+  
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+}
+  .topbar {
+      background-image: url(billeder/topbar.png);
+      background-repeat: no-repeat;
+     background-size: cover;
+     height: 10px;
+     
+    }
+
+
+  
+  @media only screen and (min-width: 300px) {
+
+    }
+
+
+    @media only screen and (min-width: 1000px) {
+
+/* Logo bar */
+
+.logo-bar {
+  
+    position: relative;
+    width: 100%;
+    height: 260px;
+    z-index: 99;
+  }
+
+  .logo {
+    margin-top: 50px;
+    float: left;
+    margin-left: 15%;
+  }
+
+  #grid {
+     
+      background-image: url(billeder/logo-grid.png);
+      background-repeat: no-repeat;
+   background-position-x: 17%;
+   
+     
+     
+      
+  }
+  
+  .project {
+    display: inline-flex;
+    margin-top: 50px;
+    float: right;
+    margin-right: 15%;
+    
+  }
+  /* logo bar slut */
+
+/* Ikoner i topbar */
+
+  .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    
+  }
+  
+  .icon-linkedin {
+    display:block;
+    margin:10px 5px auto 5px;
+    cursor: pointer;
+    background-image: url(billeder/LINKEDIN.png);
+  }
+  .icon-linkedin:hover,
+  .icon-linkedin:focus {
+    background-image: url(billeder/LINKEDIN-hover.png);
+  }
+
+  .icon-facebook {
+    display:block;
+    margin:10px 5px auto 5px;
+    cursor: pointer;
+    background-image: url(billeder/FACEBOOK.png);
+  }
+  .icon-facebook:hover,
+  .icon-facebook:focus {
+    background-image: url(billeder/FACEBOOK-hover.png);
+  }
+
+  .icon-twitter {
+    display:block;
+    margin:10px 5px auto 5px;
+    cursor: pointer;
+    background-image: url(billeder/TWITTER.png);
+  }
+  .icon-twitter:hover,
+  .icon-twitter:focus {
+    background-image: url(billeder/TWITTER-hover.png);
+  }
+
+  .slash {
+    margin: 0 15px; 
+}
+
+/* Ikoner slut */
+
+ 
+/* navbar slut */
+
+  .navbar {
+      position: sticky;
+      position: -webkit-sticky;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      margin-top: -50px;
+      padding: 30px 0;
+   background-color: white;
+   top:0;
+  }
+
+  .nav-txt {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #a6a6a6;
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 500;
+  }
+
+  .home {
+    margin: 0 15px; 
+  }
+
+  /* navbar slut */
+
+  /* Slider */
+
+  .slider {
+    position: relative;
+  text-align: left;
+  color: white;
+
+  }
+
+  .slider img {
+   width: 100%;
+     object-fit: contain;
+ }
+
+ .slider-txt {
+    position: absolute;
+    top: 23px;
+    left: 15%;
+   
+}
+
+.lille-h2 {
+    
+    font-size: 1.4vw;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.større-h2 {
+    margin: 1px 0;
+    font-size: 3.5vw;
+    letter-spacing: 3px;
+    
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.læsmere {
+    background-image: url( 'billeder/Skrå-knap.png' );
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 5%;
+  background-color: transparent;  
+  width: 10%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: #38698b;
+    letter-spacing: 1.5px;
+position: absolute;
+top: 43%;
+left: 32.3%;
+}
+
+/* Slider slut */
+
+    }
