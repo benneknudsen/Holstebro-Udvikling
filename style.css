@@ -411,6 +411,10 @@ padding-bottom: 30px;
     color: #fff;
   }
 
+.knap button {
+  padding: 15px 6px;
+}
+
 /* kommende projekt slut */
 
 
@@ -421,10 +425,10 @@ padding-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-position-y: -285px;
+  background-position-y: -310px;
   margin-top: 100px;
   background-color: #7d9cb3;
-  height: 1000px;
+  height: 1100px;
 }
 
 .banner {
@@ -465,6 +469,129 @@ padding-bottom: 30px;
   color: #5b5f61;
 }
 
+
+.opdateret-h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 4px;
+ 
+ }
+
+ .opdateret-p {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+ 
+ }
+
+
+
+
+
+
+ input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  margin-left: 26.2%;
+  cursor: pointer;
+  padding: 0.2em;
+  color: white;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #fff;
+  background-color: #fff;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+.input {
+  font-family:'Encode Sans', sans-serif;
+background-color: #f5f8fa;
+border: 1px solid #d2d2d3;
+border-radius: 3px;
+padding: 22px;
+outline: none;
+color: #666666;
+}
+
+
+.input-a {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+}
+
+.single-input {
+  width: 45%;
+  margin: 15px 2px 15px 0px;
+}
+
+.multi-input {
+  width: 20.8%;
+  margin: 15px 10px 15px 10px;
+}
+
+
 /* Opdateret slut*/
+
+/* Footer*/
+
+footer {
+  background-image: url(billeder/footer1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -170px;
+  height: 600px;
+}
+
+
+/* footer slut*/
 
     }
