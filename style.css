@@ -13,7 +13,10 @@ body {
       background-repeat: no-repeat;
      background-size: cover;
      height: 10px;
-     
+     position: sticky;
+      position: -webkit-sticky;
+      top:0;
+      z-index: 99;
     }
 
 
@@ -46,8 +49,9 @@ body {
       background-image: url(billeder/logo-grid.png);
       background-repeat: no-repeat;
    background-position-x: 17%;
-  
-     
+  z-index: 22;
+  position: relative;
+     pointer-events: none;
      
       
   }
@@ -119,10 +123,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 82;
+      z-index: 98;
       margin-top: -50px;
    background-color: white;
    top:0;
+
   }
 
   .nav-txt {
@@ -211,9 +216,19 @@ body {
 position: absolute;
 top: 43%;
 left: 32.3%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
-
+.læsmere:hover,
+  .læsmere:focus {
+    background-image: url(billeder/knap2_hover.png);
+    opacity: 1;
+    color: white;
+   
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+    }
 
 /* Slider slut */
 
@@ -242,9 +257,8 @@ left: 32.3%;
     background-repeat: no-repeat;
     z-index: 66;
     opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
     
 }
 
@@ -252,9 +266,8 @@ left: 32.3%;
   .thumb1:focus {
     background-image: url(billeder/Thumb1-hover.png);
     opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
 .thumb2 {
@@ -264,11 +277,15 @@ left: 32.3%;
     background-image: url(billeder/Thumb2.png);
     background-repeat: no-repeat;
     z-index: 66;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .thumb2:hover,
   .thumb2:focus {
     background-image: url(billeder/Thumb2-hover.png);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
 .thumb3 {
@@ -278,11 +295,15 @@ left: 32.3%;
     background-image: url(billeder/Thumb3.png);
     background-repeat: no-repeat;
     z-index: 66;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .thumb3:hover,
   .thumb3:focus {
     background-image: url(billeder/Thumb3-hover.png);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
 /* Thumb frames slut */
@@ -317,13 +338,13 @@ left: 32.3%;
 
  
  .MAD-fed {
-  width: 100%;
+  
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
-  border-bottom: 1px solid #cccccc;
+ 
   line-height: 0.1em;
   margin: -30px 0 20px;
   font-size: 32px;
@@ -335,12 +356,13 @@ position: relative;
 z-index: 66;
 }
 
-.MAD-fed span {
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  padding: 0 20px;
+.MAD-streg {
+  background-image: url(billeder/full-line.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 /* Sektion tekst slut */
 
@@ -385,6 +407,11 @@ z-index: 66;
   background-position: center;
 }
 
+button {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
   .knap {
     background-image: url( 'billeder/knap2.png' );
   background-size: 100%;
@@ -402,18 +429,23 @@ z-index: 66;
     font-weight: 400;
     color: #38698b;
     letter-spacing: 1.5px;
-padding-bottom: 30px;
+padding-bottom: 15px;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
 }
 
 .knap:hover,
   .knap:focus {
     background-image: url(billeder/knap2_hover.png);
     color: #fff;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
-.knap button {
-  padding: 15px 6px;
-}
+
+
+
+
 
 /* kommende projekt slut */
 
@@ -487,7 +519,7 @@ padding-bottom: 30px;
     font-weight: 300;
     color: #fff;
     letter-spacing: 3px;
- 
+ padding-bottom: 50px;
  }
 
 
@@ -550,9 +582,11 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .input {
-  font-family:'Encode Sans', sans-serif;
+  font-family:'Barlow', sans-serif;
 background-color: #f5f8fa;
+font-weight: 400;
 border: 1px solid #d2d2d3;
+letter-spacing: 1px;
 border-radius: 3px;
 padding: 22px;
 outline: none;
@@ -579,6 +613,56 @@ color: #666666;
 }
 
 
+.checkbox1 strong {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+.checkbox2 strong {
+font-family: 'Barlow', sans-serif;
+font-weight: 500;
+}
+
+
+.tester {
+  padding-left: 25px;
+ margin-top: -0px;
+}
+
+.knap-input {
+  background-image: url( 'billeder/knap2.png' );
+background-size: 100%;
+background-repeat: no-repeat;
+height: 5%;
+background-color: #e5ebf0;  
+width: 10%;
+border: none;
+outline: none;
+cursor: pointer;
+display: block;
+margin: 0 auto;
+font-size: 15px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: #38698b;
+  letter-spacing: 1.5px;
+padding-bottom: 15px;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.knap-input:hover,
+.knap-input:focus {
+  background-image: url(billeder/knap2_hover.png);
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+
+form {
+  padding-bottom: 5%;
+}
 /* Opdateret slut*/
 
 /* Footer*/
