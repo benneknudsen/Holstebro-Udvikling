@@ -741,6 +741,38 @@ footer {
   font-size: 1vw;
  
 }
+
+.footer-info {
+  position: absolute;
+  display: inline-flex;
+  left: 10%;
+  bottom: 2%;
+ 
+}
+
+.info-footer {
+  display: block;
+  text-align: left;
+  letter-spacing: 2px;
+  color: #9fc2d8;
+  font-size: 0.8vw;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+
+}
+
+.info-footer strong {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+ 
+}
+
+.info-footer a {
+  text-decoration: none;
+  color: #9fc2d8;
+}
+
 /* footer slut*/
 
     }
