@@ -13,15 +13,791 @@ body {
       background-repeat: no-repeat;
      background-size: cover;
      height: 10px;
-     position: sticky;
-      position: -webkit-sticky;
+     
       top:0;
-      z-index: 99;
+     
     }
 
 
   
   @media only screen and (min-width: 300px) {
+
+/* Logo bar */
+
+.logo-bar {
+  
+  position: relative;
+  width: 100%;
+  height: 260px;
+  
+}
+
+.logo {
+  margin-top: 50px;
+  float: left;
+  margin-left: 15%;
+}
+
+#grid {
+   
+    background-image: url(billeder/logo-grid.png);
+    background-repeat: no-repeat;
+ background-position-x: 17%;
+z-index: 99;
+position: relative;
+pointer-events: none;
+}
+
+.project {
+  display: inline-flex;
+  margin-top: 50px;
+  float: right;
+  margin-right: 15%;
+  
+}
+
+.project-nav {
+  display: none;
+  margin-top: -60px;
+  float: right;
+  margin-right: 5%;
+  
+}
+/* logo bar slut */
+
+/* Ikoner i topbar */
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  pointer-events: visible;
+  background-size: cover;
+  
+}
+
+.icon-linkedin {
+  display:block;
+  margin:10px 5px auto 5px;
+  cursor: pointer;
+  
+  background-image: url(billeder/LINKEDIN.png);
+}
+.icon-linkedin:hover,
+.icon-linkedin:focus {
+  background-image: url(billeder/LINKEDIN-hover.png);
+}
+
+.icon-facebook {
+  display:block;
+  margin:10px 5px auto 5px;
+  cursor: pointer;
+  background-image: url(billeder/FACEBOOK.png);
+}
+.icon-facebook:hover,
+.icon-facebook:focus {
+  background-image: url(billeder/FACEBOOK-hover.png);
+}
+
+.icon-twitter {
+  display:block;
+  margin:10px 5px auto 5px;
+  cursor: pointer;
+  background-image: url(billeder/TWITTER.png);
+}
+.icon-twitter:hover,
+.icon-twitter:focus {
+  background-image: url(billeder/TWITTER-hover.png);
+}
+
+.slash {
+  margin: 0 15px; 
+}
+
+/* Ikoner slut */
+
+
+/* navbar slut */
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 98;
+    margin-top: -50px;
+ background-color: white;
+ top:0;
+
+}
+
+.nav-scroll {
+  width: 71%;
+}
+
+.justify {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.scrolllogo {
+display: none;
+margin-top: 20px;
+float: left;
+margin-left: 5%;
+}
+
+.showscroll {
+display: inline-flex!important;
+
+}
+
+.nav-txt {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    height: 50px;
+    padding-top: 25px;
+    z-index: 99;
+    
+}
+
+/* Hover skal kigges mere på  */
+.nav-txt:hover {
+  background-image: url(billeder/hover-slash.png);
+background-position-y: 10px;
+  background-repeat: no-repeat;
+  
+
+}
+
+.home {
+  margin: 0 15px; 
+}
+
+/* navbar slut */
+
+/* Slider */
+
+.slider {
+  position: relative;
+text-align: left;
+color: white;
+
+}
+
+.slider img {
+ width: 100%;
+
+   object-fit: contain;
+}
+
+.slider-txt {
+  position: absolute;
+  top: 23px;
+  left: 15%;
+ 
+}
+
+.lille-h2 {
+  
+  font-size: 1.4vw;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+.større-h2 {
+  margin: 1px 0;
+  font-size: 3.5vw;
+  letter-spacing: 3px;
+  
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+
+
+.læsmere {
+  background-image: url( 'billeder/Skrå-knap.png' );
+background-size: 100%;
+background-repeat: no-repeat;
+height: 5%;
+background-color: transparent;  
+width: 10%;
+border: none;
+outline: none;
+cursor: pointer;
+position: absolute;
+font-size: 15px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: #38698b;
+  letter-spacing: 1.5px;
+position: absolute;
+top: 43%;
+left: 32.3%;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.læsmere:hover,
+.læsmere:focus {
+  background-image: url(billeder/knap2_hover.png);
+  opacity: 1;
+  color: white;
+ 
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+  }
+
+/* Slider slut */
+
+/* Thumb Frames */
+
+.thumb-frames {
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+}
+
+.thumb {
+display: inline-block;
+width: 250px;
+height: 250px;
+background-size: contain;
+align-self: center;
+}
+
+.thumb1 {
+display:block;
+  margin:-50px 25px auto 25px;
+  cursor: pointer;
+  background-image: url(billeder/Thumb1.png);
+  background-repeat: no-repeat;
+  z-index: 66;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  
+}
+
+.thumb1:hover,
+.thumb1:focus {
+  background-image: url(billeder/Thumb1-hover.png);
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.thumb2 {
+display:block;
+margin:-50px 25px auto 25px;
+  cursor: pointer;
+  background-image: url(billeder/Thumb2.png);
+  background-repeat: no-repeat;
+  z-index: 66;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.thumb2:hover,
+.thumb2:focus {
+  background-image: url(billeder/Thumb2-hover.png);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.thumb3 {
+display:block;
+margin:-50px 25px auto 25px;
+  cursor: pointer;
+  background-image: url(billeder/Thumb3.png);
+  background-repeat: no-repeat;
+  z-index: 66;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.thumb3:hover,
+.thumb3:focus {
+  background-image: url(billeder/Thumb3-hover.png);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* Thumb frames slut */
+
+/* Sektion tekst */
+
+.Sektion-h2 {
+text-align: center;
+font-size: 50px;
+font-family: 'Barlow', sans-serif;
+ font-weight: 300;
+ color: #505456;
+ letter-spacing: 1.5px;
+
+}
+.Sektion-p {
+text-align: center;
+font-size: 20px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: #8e9496;
+  letter-spacing: 1.5px;
+margin: 20px 20% 100px 20%;
+}
+
+.passer {
+ position: relative;
+ display: block;
+ margin: 0 auto;
+ z-index: 65;
+}
+
+
+.MAD-fed {
+
+position: absolute;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+text-align: center;
+
+line-height: 0.1em;
+margin: -30px 0 20px;
+font-size: 32px;
+font-family: 'Barlow', sans-serif;
+letter-spacing: 2px;
+color: #38698b;
+font-weight: 400;
+position: relative;
+z-index: 66;
+}
+
+.MAD-streg {
+background-image: url(billeder/full-line.png);
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+/* Sektion tekst slut */
+
+/* Kommende projekt*/
+
+.hus-img {
+display: block;
+margin: 0 auto;
+padding-top: 50px;
+}
+
+.span-button {
+position: relative;
+z-index: 2;
+background: #fff;
+padding: 0 20px;
+}
+
+.projekt-h2 {
+text-align: center;
+font-size: 40px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: #505456;
+  letter-spacing: 1.5px;
+
+}
+.projekt-p {
+ text-align: center;
+ font-size: 20px;
+ font-family: 'Barlow', sans-serif;
+   font-weight: 300;
+   color: #8e9496;
+   letter-spacing: 1.5px;
+margin: 20px 20% 50px 20%;
+}
+
+/* Knapper*/
+
+.projekt-knap {
+background-image: url(billeder/LINE.png);
+background-size: 65%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+button {
+padding-top: 10px;
+padding-bottom: 5px;
+}
+
+.knap {
+  background-image: url( 'billeder/knap2.png' );
+background-size: 100%;
+background-repeat: no-repeat;
+height: 5%;
+background-color: transparent;  
+width: 10%;
+border: none;
+outline: none;
+cursor: pointer;
+display: block;
+margin: 0 auto;
+font-size: 15px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: #38698b;
+  letter-spacing: 1.5px;
+padding-bottom: 15px;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.knap:hover,
+.knap:focus {
+  background-image: url(billeder/knap2_hover.png);
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+/* Knapper slut */
+/* kommende projekt slut */
+
+
+/* Opdateret */
+
+.opdateret {
+background-image: url(billeder/grid-big.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+background-position-y: -310px;
+margin-top: 100px;
+background-color: #7d9cb3;
+height: 1100px;
+}
+
+.banner {
+
+height: 100px;
+background-image: url(billeder/banner.png);
+background-color: transparent;
+
+
+}
+
+
+.elements {
+display: flex;
+align-self: center;
+justify-content: center;
+align-items: center;
+
+}
+
+.megafon {
+margin: 0 15px;
+}
+
+
+
+.elements p {
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+font-size: 16px;
+color: #9ca1a4;
+}
+
+.elements h2 {
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+font-size: 30px;
+color: #5b5f61;
+}
+
+
+.opdateret-h2 {
+text-align: center;
+font-size: 50px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 4px;
+
+}
+
+.opdateret-p {
+text-align: center;
+font-size: 24px;
+font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 3px;
+padding-bottom: 50px;
+}
+
+
+
+/* Inputs på siden */
+
+
+input[type=checkbox] + label {
+display: block;
+margin: 0.2em;
+margin-left: 26.2%;
+cursor: pointer;
+padding: 0.2em;
+color: white;
+font-size: 18px;
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+
+}
+
+input[type=checkbox] {
+display: none;
+}
+
+input[type=checkbox] + label:before {
+content: "\2714";
+border: 0.1em solid #fff;
+background-color: #fff;
+border-radius: 0.2em;
+display: inline-block;
+width: 1em;
+height: 1em;
+padding-left: 0.2em;
+padding-bottom: 0.3em;
+margin-right: 0.2em;
+vertical-align: bottom;
+color: transparent;
+transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+background-color: MediumSeaGreen;
+border-color: MediumSeaGreen;
+color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+transform: scale(1);
+border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+transform: scale(1);
+background-color: #bfb;
+border-color: #bfb;
+}
+
+.input {
+font-family:'Barlow', sans-serif;
+background-color: #f5f8fa;
+font-weight: 400;
+border: 1px solid #d2d2d3;
+letter-spacing: 1px;
+border-radius: 3px;
+padding: 22px;
+outline: none;
+color: #666666;
+}
+
+
+.input-a {
+display: flex;
+justify-items: center;
+justify-content: center;
+width: 100%;
+
+}
+
+.single-input {
+width: 45%;
+margin: 15px 2px 15px 0px;
+}
+
+.multi-input {
+width: 20.8%;
+margin: 15px 10px 15px 10px;
+}
+
+
+.checkbox1 strong {
+font-family: 'Barlow', sans-serif;
+font-weight: 500;
+}
+
+.checkbox2 strong {
+font-family: 'Barlow', sans-serif;
+font-weight: 500;
+}
+
+
+.tester {
+padding-left: 25px;
+margin-top: -0px;
+}
+
+.knap-input {
+background-image: url( 'billeder/knap2.png' );
+background-size: 100%;
+background-repeat: no-repeat;
+height: 5%;
+background-color: #e5ebf0;  
+width: 10%;
+border: none;
+outline: none;
+cursor: pointer;
+display: block;
+margin: 0 auto;
+font-size: 15px;
+font-family: 'Barlow', sans-serif;
+font-weight: 400;
+color: #38698b;
+letter-spacing: 1.5px;
+padding-bottom: 15px;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+.knap-input:hover,
+.knap-input:focus {
+background-image: url(billeder/knap2_hover.png);
+color: #fff;
+-webkit-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+
+
+form {
+padding-bottom: 5%;
+}
+/* Opdateret slut*/
+
+/* Footer*/
+
+footer {
+background-image: url(billeder/footer1.png);
+background-size: cover;
+background-repeat: no-repeat;
+margin-top: -170px;
+height: 600px;
+}
+
+.logoer {
+position: absolute;
+bottom:7%;
+left: 9.5%;
+
+}
+
+.logoer img {
+max-width: 100%;
+height: auto;
+margin: 0 10px;
+}
+
+.footer-logo {
+position: absolute;
+bottom: 10%;
+right: 10%;
+}
+
+.slider-adresse {
+position: absolute;
+display: inline-flex;
+right: 10%;
+bottom: 7%;
+
+}
+
+.adresse {
+display: block;
+text-align: right;
+letter-spacing: 2px;
+color: #9fc2d8;
+font-size: 0.8vw;
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+
+}
+
+.footer-line {
+width: 80%;
+height: auto;
+position: absolute;
+bottom: 3.5%;
+left: 10%;
+}
+
+.CogP {
+position: absolute;
+bottom: 3%;
+right: 10%;
+
+}
+
+.CogP a {
+text-decoration: none;
+
+
+}
+
+.CogP p {
+
+font-size: 1vw;
+
+}
+
+.footer-info {
+position: absolute;
+display: inline-flex;
+left: 10%;
+bottom: 2%;
+
+}
+
+.info-footer {
+display: block;
+text-align: left;
+letter-spacing: 2px;
+color: #9fc2d8;
+font-size: 0.8vw;
+font-family: 'Barlow', sans-serif;
+font-weight: 300;
+
+}
+
+.info-footer strong {
+font-family: 'Barlow', sans-serif;
+font-weight: 400;
+letter-spacing: 2.5px;
+
+}
+
+.info-footer a {
+text-decoration: none;
+color: #9fc2d8;
+}
+
+/* footer slut*/
+
+
 
     }
 
@@ -49,11 +825,9 @@ body {
       background-image: url(billeder/logo-grid.png);
       background-repeat: no-repeat;
    background-position-x: 17%;
-  z-index: 22;
+  z-index: 99;
   position: relative;
-     pointer-events: none;
-     
-      
+  pointer-events: none;
   }
   
   .project {
@@ -61,6 +835,14 @@ body {
     margin-top: 50px;
     float: right;
     margin-right: 15%;
+    
+  }
+
+  .project-nav {
+    display: none;
+    margin-top: -60px;
+    float: right;
+    margin-right: 5%;
     
   }
   /* logo bar slut */
@@ -71,6 +853,7 @@ body {
     display: inline-block;
     width: 30px;
     height: 30px;
+    pointer-events: visible;
     background-size: cover;
     
   }
@@ -79,6 +862,7 @@ body {
     display:block;
     margin:10px 5px auto 5px;
     cursor: pointer;
+    
     background-image: url(billeder/LINKEDIN.png);
   }
   .icon-linkedin:hover,
@@ -120,15 +904,34 @@ body {
   .navbar {
       position: sticky;
       position: -webkit-sticky;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       z-index: 98;
       margin-top: -50px;
    background-color: white;
    top:0;
-
+   box-shadow: 0 5px 3px -6px #777;
   }
+
+  .nav-scroll {
+    width: 71%;
+  }
+
+.justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolllogo {
+  display: none;
+  margin-top: 20px;
+  float: left;
+  margin-left: 5%;
+}
+
+.showscroll {
+  display: inline-flex!important;
+  
+}
 
   .nav-txt {
       margin: 0 15px;
@@ -140,6 +943,7 @@ body {
       height: 50px;
       padding-top: 25px;
       z-index: 99;
+      
   }
 
 /* Hover skal kigges mere på  */
