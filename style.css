@@ -326,7 +326,7 @@ left: 32.3%;
     font-weight: 300;
     color: #8e9496;
     letter-spacing: 1.5px;
- margin: 20px 350px 100px 350px;
+ margin: 20px 20% 100px 20%;
  }
  
  .passer {
@@ -397,8 +397,10 @@ z-index: 66;
      font-weight: 300;
      color: #8e9496;
      letter-spacing: 1.5px;
-  margin: 20px 350px 50px 350px;
+  margin: 20px 20% 50px 20%;
   }
+
+  /* Knapper*/
 
 .projekt-knap {
   background-image: url(billeder/LINE.png);
@@ -446,7 +448,7 @@ transition: 0.4s ease-in-out;
 
 
 
-
+/* Knapper slut */
 /* kommende projekt slut */
 
 
@@ -524,7 +526,7 @@ transition: 0.4s ease-in-out;
 
 
 
-
+/* Inputs på siden */
 
 
  input[type=checkbox] + label {
@@ -675,7 +677,70 @@ footer {
   height: 600px;
 }
 
+.logoer {
+  position: absolute;
+  bottom:7%;
+  left: 9.5%;
+  
+}
 
+.logoer img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.slider-adresse {
+  position: absolute;
+  display: inline-flex;
+  right: 10%;
+  bottom: 7%;
+ 
+}
+
+.adresse {
+  display: block;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #9fc2d8;
+  font-size: 0.8vw;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+
+}
+
+.footer-line {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  bottom: 3.5%;
+  left: 10%;
+}
+
+.CogP {
+  position: absolute;
+  bottom: 3%;
+  right: 10%;
+ 
+}
+
+.CogP a {
+  text-decoration: none;
+  
+ 
+}
+
+.CogP p {
+
+  font-size: 1vw;
+ 
+}
 /* footer slut*/
 
     }
