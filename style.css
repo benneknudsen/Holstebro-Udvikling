@@ -244,9 +244,10 @@ transition: 0.4s ease-in-out;
 
 .læsmere:hover,
 .læsmere:focus {
-  background-image: url(billeder/knap2_hover.png);
-  opacity: 1;
-  color: white;
+  background-image: url( 'billeder/Skrå-knap-hover.png' );
+
+  
+  color: #fff;
  
 -webkit-transition: 0.4s ease-in-out;
 transition: 0.4s ease-in-out;
@@ -806,6 +807,91 @@ color: #9fc2d8;
 
 /* Logo bar */
 
+
+.nav-container {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 98;
+  margin-top: -50px;
+background-color: white;
+top:0;
+
+  width: 100%;
+ 
+}
+
+ul,
+li {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+
+
+.nav-item {
+  padding: 10px;
+  display: inline;
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+.nav-item-dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-trigger {
+  position: relative;
+}
+.dropdown-trigger:focus + .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+.dropdown-trigger::after {
+  content: "›";
+  position: absolute;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+
+  right: -20px;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  top: 2.5rem;
+  right: -10px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  width: 160px;
+}
+.dropdown-menu a {
+      text-decoration: none;
+      color: #a6a6a6;
+      font-size: 16px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 500;
+    
+      
+}
+
+.dropdown-menu-item {
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+}
+.dropdown-menu-item:hover {
+  background-color: rgb(230, 220, 220);
+}
+
+
 .logo-bar {
   
     position: relative;
@@ -818,6 +904,9 @@ color: #9fc2d8;
     margin-top: 50px;
     float: left;
     margin-left: 15%;
+    max-width: 100%;
+    height: auto;
+    pointer-events: visible;
   }
 
   #grid {
@@ -1002,7 +1091,7 @@ color: #9fc2d8;
 
 
 .læsmere {
-    background-image: url( 'billeder/Skrå-knap.png' );
+    background-image: url( 'billeder/Skrå-knap.png');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 5%;
@@ -1026,9 +1115,10 @@ left: 32.3%;
 
 .læsmere:hover,
   .læsmere:focus {
-    background-image: url(billeder/knap2_hover.png);
+    background-image: url( 'billeder/Skrå-knap-hover.png' );
+
     opacity: 1;
-    color: white;
+    color: #fff;
    
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -1215,7 +1305,7 @@ z-index: 66;
 
 button {
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 9px;
 }
 
   .knap {
