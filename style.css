@@ -733,7 +733,7 @@ color: #9fc2d8;
     }
 
 
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 1258px) {
 
 /* Logo bar */
 
@@ -874,7 +874,8 @@ li {
     height: 30px;
     pointer-events: visible;
     background-size: cover;
-    
+    -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   }
   
   .icon-linkedin {
@@ -1253,9 +1254,9 @@ button {
     background-image: url( 'billeder/knap2.png' );
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 5%;
+  height: 47px;
+width: 200px;
   background-color: transparent;  
-  width: 10%;
   border: none;
   outline: none;
   cursor: pointer;
@@ -1467,12 +1468,12 @@ font-weight: 500;
 }
 
 .knap-input {
-  background-image: url( 'billeder/knap2.png' );
+  background-image: url( 'billeder/knap2.png');
 background-size: 100%;
 background-repeat: no-repeat;
-height: 5%;
+height: 45px;
+width: 200px;
 background-color: #e5ebf0;  
-width: 10%;
 border: none;
 outline: none;
 cursor: pointer;
@@ -1483,7 +1484,7 @@ font-family: 'Barlow', sans-serif;
   font-weight: 400;
   color: #38698b;
   letter-spacing: 1.5px;
-padding-bottom: 15px;
+
 -webkit-transition: 0.4s ease-in-out;
 transition: 0.4s ease-in-out;
 }
@@ -1613,7 +1614,7 @@ footer {
 
 .carousel {
   background: #fff;
-  
+ 
 }
 
 .carousel-cell {
@@ -1630,11 +1631,42 @@ footer {
 .carousel-nav .carousel-cell {
   height: 140px;
   width: 180px;
+position: relative;
+z-index: 99;
+margin-top: -30px;
+}
 
+
+.carousel-main {
+position: relative;
+z-index: 1;
+}
+
+#content-home {
+  position: relative;
+z-index: 1;
 }
 
 
 
 
-
     }
+
+    @media only screen and (min-width: 1258px) and (max-width: 1400px) {
+
+      .project-nav {
+        display: none;
+        margin-top: -60px;
+        float: right;
+        margin-right: 1%;
+    }
+
+    .scrolllogo {
+      display: none;
+      margin-top: 20px;
+      float: left;
+      margin-left: 1%;
+  }
+
+
+      }
