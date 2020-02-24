@@ -228,7 +228,7 @@ left: 32.3%;
 
 .læsmere {
   background-image: url( 'billeder/Skrå-knap.png' );
-background-size: 100%;
+background-size: 100% 100%;
 background-repeat: no-repeat;
 height: 5%;
 background-color: transparent;  
@@ -1030,7 +1030,7 @@ li {
 
 .læsmere {
     background-image: url( 'billeder/Skrå-knap.png');
-  background-size: 100%;
+    background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 5%;
   background-color: transparent;  
@@ -1046,7 +1046,7 @@ li {
     letter-spacing: 1.5px;
 position: absolute;
 top: 43%;
-left: 32.3%;
+left: 32.6%;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -1259,7 +1259,7 @@ button {
 
   .knap {
     background-image: url( 'billeder/knap2.png' );
-  background-size: 100%;
+    background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 47px;
 width: 200px;
@@ -1476,7 +1476,7 @@ font-weight: 500;
 
 .knap-input {
   background-image: url( 'billeder/knap2.png');
-background-size: 100%;
+  background-size: 100% 100%;
 background-repeat: no-repeat;
 height: 45px;
 width: 200px;
@@ -1889,23 +1889,23 @@ display: block;
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
   background-image: url("billeder/slider.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: contain;
 }
 .carousel__slide:nth-of-type(2),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/1600?random");
-  background-size: 100%;
+  background-image: url("https://source.unsplash.com/random/2220x1180");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   
 }
 .carousel__slide:nth-of-type(3),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/1900?random");
-  background-size: 100%;
+  background-image: url("https://source.unsplash.com/random/1920x1080");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   
