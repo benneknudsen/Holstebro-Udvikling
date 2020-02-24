@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="Holstebro Udvikling">
   <title>Holstebro Udvikling</title>
   <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+ 
+  
+
 
 </head>
 
@@ -101,68 +104,57 @@
     </ul>
   </div>
 
-  <div class="carousel carousel-main" data-flickity='{"pageDots": false, "autoPlay": 7500}'>
-    <div class="carousel-cell">
-      <div class="slider">
-        <div class="slider-txt">
-          <h2 class="lille-h2">VINTER 2020</h2>
-          <h2 class="større-h2">Byfornyelse</h2>
-          <h2 class="større-h2">på Adressevej</h2>
-        </div>
-        <button class="læsmere">LÆS MERE ...</button>
+  <div class="carousel-container">
 
-        <img src="billeder/slider.png" alt="" draggable="false">
+    <ul class="carousel my-carousel carousel--thumb">
+      <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked"/>
+      <input class="carousel__activator" type="radio" id="L" name="thumb"/>
+      <input class="carousel__activator" type="radio" id="M" name="thumb"/>
 
-
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="O"></label>
+        <label class="carousel__control carousel__control--forward" for="L"></label>
       </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="slider">
-        <div class="slider-txt">
-          <h2 class="lille-h2">VINTER 2020</h2>
-          <h2 class="større-h2">Byfornyelse</h2>
-          <h2 class="større-h2">på Adressevej</h2>
-        </div>
-        <button class="læsmere">LÆS MERE ...</button>
-
-        <img src="billeder/slider.png" alt="" draggable="false">
-
-
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="K"></label>
+        <label class="carousel__control carousel__control--forward" for="M"></label>
       </div>
-    </div>
-    <div class="carousel-cell">
-      <div class="slider">
-        <div class="slider-txt">
-          <h2 class="lille-h2">VINTER 2020</h2>
-          <h2 class="større-h2">Byfornyelse</h2>
-          <h2 class="større-h2">på Adressevej</h2>
-        </div>
-        <button class="læsmere">LÆS MERE ...</button>
-
-        <img src="billeder/slider.png" alt="" draggable="false">
-
-
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="L"></label>
+        <label class="carousel__control carousel__control--forward" for="N"></label>
       </div>
-    </div>
+
+      <li class="carousel__slide">
+       
+          <div class="slider-txt">
+            <h2 class="lille-h2">VINTER 2020</h2>
+            <h2 class="større-h2">Byfornyelse</h2>
+            <h2 class="større-h2">på Adressevej</h2>
+            
+          </div>
+         
+          <button class="læsmere">LÆS MERE ...</button>
+       
+       
   
+      </li>
+      <li class="carousel__slide">
+        
+      </li>
+      <li class="carousel__slide">
+       
+      </li>
+
+      <div class="carousel__indicators">
+        <label class="carousel__indicator" for="K"></label>
+        <label class="carousel__indicator" for="L"></label>
+        <label class="carousel__indicator" for="M"></label>
+    
+      </div>
+    </ul>
   </div>
-  
-  <div class="carousel carousel-nav"
-  data-flickity='{ "asNavFor": ".carousel-main","groupCells": true,"contain": true,"prevNextButtons": false,"draggable": false,"pageDots": false }'>
-    <div class="carousel-cell">
-     <img class="thumb" src="billeder/Thumb1.png" alt="">
-    </div>
-    <div class="carousel-cell">
-      <img class="thumb" src="billeder/Thumb2.png" alt="">
-    </div>
-    <div class="carousel-cell">
-      <img class="thumb" src="billeder/Thumb3.png" alt="">
-    </div>
-  
-  </div>
-  
 
-  
+
 
 
 
@@ -291,7 +283,9 @@
     </div>
 
   </footer>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="main.js"></script>
