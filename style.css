@@ -65,7 +65,6 @@ pointer-events: none;
 }
 
 .project-nav {
- 
   margin-top: -60px;
   float: right;
   margin-right: 5%;
@@ -241,9 +240,9 @@ top: 0;
 #drawerm ul {
   list-style-type: none;
   margin: 110px 10px 0px 105px;
-  font-family: Heebo, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   background-color: #fff;
   
 }
@@ -267,12 +266,12 @@ top: 0;
 }
 
 .dropdown-btn-m {
-  font-family: Heebo, sans-serif;
+  font-family: 'Barlow', sans-serif;
   padding: 20px;
   color: #7191a3;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   display: block;
   border: none;
   background: none;
@@ -284,7 +283,7 @@ top: 0;
 
 .dropdown-btn-m:hover {
   color: #0c3044;
-  font-weight: 700;
+  font-weight: 400;
 
 }
 
@@ -292,8 +291,8 @@ top: 0;
   display: none;
   background-color: #fff;
  
-  font-size: 12px;
-  font-family: Heebo-Light, sans-serif;
+  font-size: 14px;
+  font-family: 'Barlow', sans-serif;
 
 }
 
@@ -315,6 +314,15 @@ top: 0;
   height: 30px;
   pointer-events: visible;
   background-size: cover;
+  
+}
+
+.icon-m {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  pointer-events: visible;
+  background-size: contain;
   
 }
 
@@ -1926,7 +1934,7 @@ transition: 0.4s ease-in-out;
 /* Inputs på siden */
 
 
- input[type=checkbox] + label {
+.form input[type=checkbox] + label {
   display: block;
   margin: 0.2em;
   margin-left: 26.2%;
@@ -1937,13 +1945,13 @@ transition: 0.4s ease-in-out;
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
   
-}
-
-input[type=checkbox] {
+  }
+  
+  .form input[type=checkbox] {
   display: none;
-}
-
-input[type=checkbox] + label:before {
+  }
+  
+  .form input[type=checkbox] + label:before {
   content: "\2714";
   border: 0.1em solid #fff;
   background-color: #fff;
@@ -1957,28 +1965,29 @@ input[type=checkbox] + label:before {
   vertical-align: bottom;
   color: transparent;
   transition: .2s;
-}
-
-input[type=checkbox] + label:active:before {
+  }
+  
+  .form input[type=checkbox] + label:active:before {
   transform: scale(0);
-}
-
-input[type=checkbox]:checked + label:before {
+  }
+  
+  .form input[type=checkbox]:checked + label:before {
   background-color: MediumSeaGreen;
   border-color: MediumSeaGreen;
   color: #fff;
-}
-
-input[type=checkbox]:disabled + label:before {
+  }
+  
+  .form input[type=checkbox]:disabled + label:before {
   transform: scale(1);
   border-color: #aaa;
-}
-
-input[type=checkbox]:checked:disabled + label:before {
+  }
+  
+  .form input[type=checkbox]:checked:disabled + label:before {
   transform: scale(1);
   background-color: #bfb;
   border-color: #bfb;
-}
+  }
+  
 
 .input {
   font-family:'Barlow', sans-serif;
