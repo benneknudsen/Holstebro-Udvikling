@@ -551,7 +551,7 @@ font-family: 'Barlow', sans-serif;
   font-weight: 300;
   color: #8e9496;
   letter-spacing: 1.5px;
-margin: 20px 20% 100px 20%;
+margin: 20px 10% 100px 10%;
 }
 
 .passer {
@@ -624,7 +624,7 @@ font-family: 'Barlow', sans-serif;
    font-weight: 300;
    color: #8e9496;
    letter-spacing: 1.5px;
-margin: 20px 20% 50px 20%;
+margin: 20px 10% 50px 10%;
 }
 
 /* Knapper*/
@@ -749,6 +749,7 @@ font-family: 'Barlow', sans-serif;
   color: #fff;
   letter-spacing: 3px;
 padding-bottom: 50px;
+margin: 0px 30px;
 }
 
 
@@ -905,14 +906,14 @@ height: 600px;
 }
 
 .logoer {
-position: absolute;
-bottom:7%;
-left: 9.5%;
+  position: absolute;
+  bottom: 8%;
+  left: 5.5%;
 
 }
 
 .logoer img {
-max-width: 100%;
+max-width: 40%;
 height: auto;
 margin: 0 10px;
 }
@@ -920,14 +921,14 @@ margin: 0 10px;
 .footer-logo {
 position: absolute;
 bottom: 10%;
-right: 10%;
+right: 5%;
 }
 
 .slider-adresse {
-position: absolute;
-display: inline-flex;
-right: 10%;
-bottom: 7%;
+  position: absolute;
+  display: inline-flex;
+  right: 10%;
+  bottom: 5%;
 
 }
 
@@ -936,7 +937,7 @@ display: block;
 text-align: right;
 letter-spacing: 2px;
 color: #9fc2d8;
-font-size: 0.8vw;
+font-size: 3.8vw;
 font-family: 'Barlow', sans-serif;
 font-weight: 300;
 
@@ -951,9 +952,10 @@ left: 10%;
 }
 
 .CogP {
+  display: inline-flex;
 position: absolute;
-bottom: 3%;
-right: 10%;
+bottom: 0.3%;
+right: 16%;
 
 }
 
@@ -964,8 +966,8 @@ text-decoration: none;
 }
 
 .CogP p {
-
-font-size: 1vw;
+margin: 0 20px;
+font-size: 3vw;
 
 }
 
@@ -973,8 +975,12 @@ font-size: 1vw;
 position: absolute;
 display: inline-flex;
 left: 10%;
-bottom: 2%;
+bottom: 1.3%;
 
+}
+
+.span-margin {
+  margin: 0px 10px;
 }
 
 .info-footer {
@@ -982,7 +988,7 @@ display: block;
 text-align: left;
 letter-spacing: 2px;
 color: #9fc2d8;
-font-size: 0.8vw;
+font-size: 2.4vw;
 font-family: 'Barlow', sans-serif;
 font-weight: 300;
 
@@ -2130,6 +2136,7 @@ footer {
 }
 
 .CogP {
+  display: block;
   position: absolute;
   bottom: 3%;
   right: 10%;
@@ -2143,9 +2150,13 @@ footer {
 }
 
 .CogP p {
-
+  margin: 30px 0px;
   font-size: 1vw;
  
+}
+
+.span-margin {
+  margin: 0px 30px;
 }
 
 .footer-info {
