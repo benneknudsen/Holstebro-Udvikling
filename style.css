@@ -239,7 +239,7 @@ top: 0;
 
 #drawerm ul {
   list-style-type: none;
-  margin: 110px 10px 0px 105px;
+  margin: 70px 10px 0px 105px;
   font-family: 'Barlow', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -986,7 +986,7 @@ right: 5%;
   position: absolute;
   display: inline-flex;
   right: 10%;
-  bottom: 5%;
+  bottom: 5.5%;
 
 }
 
@@ -995,10 +995,10 @@ display: block;
 text-align: right;
 letter-spacing: 2px;
 color: #9fc2d8;
-font-size: 18px;
+font-size: 14px;
 font-family: 'Barlow', sans-serif;
 font-weight: 300;
-
+text-decoration: none;
 }
 
 .footer-line {
@@ -1033,7 +1033,7 @@ font-size: 14px;
 position: absolute;
 display: inline-flex;
 left: 10%;
-bottom: 1.1%;
+bottom: 0.9%;
 
 }
 
@@ -1046,7 +1046,7 @@ display: block;
 text-align: left;
 letter-spacing: 2px;
 color: #9fc2d8;
-font-size: 12px;
+font-size: 10px;
 font-family: 'Barlow', sans-serif;
 font-weight: 300;
 
@@ -1066,6 +1066,9 @@ color: #9fc2d8;
 
 /* footer slut*/
 
+/* ------------ Sliders på siden----------- */
+
+
 .carousel {
   height: 85vh;
   width: 100%;
@@ -1074,21 +1077,7 @@ color: #9fc2d8;
   position: relative;
   padding: 0;
  
-/**
-  * Where the magic happens
-  */
-/**
-    * Control element - right/left arrows
-  */
-/**
-    * Element for holding slide indicators
-  */
-/**
-    * Indicator for indicating active slide
-  */
-/**
-    * Create rules for when slides are contained within a track
-  */
+
 }
 .carousel__controls,
 .carousel__activator {
@@ -1307,9 +1296,7 @@ color: #9fc2d8;
   overflow-y: auto;
   opacity: 0;
 }
-/**
-  * Theming
-*/
+
 
 .carousel-container {
 display: block;
@@ -1356,6 +1343,47 @@ display: block;
   background-repeat: no-repeat;
   
 }
+
+
+
+/* ------------ OM OS!!----------- */
+
+.titel-fed {
+  
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+ 
+  line-height: 0.1em;
+  margin: -60px 0 20px;
+  font-size: 32px;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 2px;
+  color: #38698b;
+  font-weight: 300;
+position: relative;
+z-index: 66;
+}
+
+.titel-streg {
+  background-image: url(billeder/omos-line.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.omos-h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #505456;
+    letter-spacing: 2.0px;
+ padding-top: 20px;
+ }
+
 
     }
 
@@ -1562,6 +1590,7 @@ li {
    background-color: white;
    top:0;
    box-shadow: 0 5px 3px -6px #777;
+ 
   }
 
   .nav-scroll {
@@ -2139,17 +2168,25 @@ form {
 
 /* Footer*/
 
-footer {
+.footer {
   background-image: url(billeder/footer1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: -170px;
+  margin-top: -140px;
+  height: 600px;
+}
+
+.footer_omos {
+  background-image: url(billeder/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
   height: 600px;
 }
 
 .logoer {
   position: absolute;
-  bottom:7%;
+  bottom: 300px;
   left: 9.5%;
   
 }
@@ -2162,7 +2199,7 @@ footer {
 
 .footer-logo {
   position: absolute;
-  bottom: 10%;
+  bottom: 450px;
   right: 10%;
 }
 
@@ -2170,7 +2207,7 @@ footer {
   position: absolute;
   display: inline-flex;
   right: 10%;
-  bottom: 7%;
+  bottom: 300px;
  
 }
 
@@ -2249,7 +2286,7 @@ footer {
 }
 
 /* footer slut*/
-
+/* ------------ Slider på siden----------- */
 
 
 .carousel {
@@ -2260,21 +2297,7 @@ footer {
   position: relative;
   padding: 0;
  
-/**
-  * Where the magic happens
-  */
-/**
-    * Control element - right/left arrows
-  */
-/**
-    * Element for holding slide indicators
-  */
-/**
-    * Indicator for indicating active slide
-  */
-/**
-    * Create rules for when slides are contained within a track
-  */
+
 }
 .carousel__controls,
 .carousel__activator {
@@ -2543,8 +2566,140 @@ display: block;
   
 }
 
+/* ------------ OM OS!!----------- */
 
 
+.titel-fed {
+  
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+ 
+  line-height: 0.1em;
+  margin: -60px 0 20px;
+  font-size: 32px;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 2px;
+  color: #38698b;
+  font-weight: 300;
+position: relative;
+z-index: 66;
+}
+
+.titel-streg {
+  background-image: url(billeder/full-line.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.omos-h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #505456;
+    letter-spacing: 2.0px;
+ padding-top: 20px;
+ }
+
+
+ .flex-parent {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+
+.flex-child {
+  flex: 2;
+  margin: 20px;
+}
+
+.textfyld {
+  color: #7d8386;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+
+.fa-caret-right {
+  color: #7ba5c2;
+}
+
+.titel-jesper {
+  
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+ 
+  line-height: 0.1em;
+  margin: -60px 90px 20px;
+  font-size: 32px;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 2px;
+  color: #38698b;
+  font-weight: 300;
+position: relative;
+z-index: 66;
+}
+
+.mini-p {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+ 
+  line-height: 0.1em;
+  margin: 30px 20px 20px;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 2px;
+  color: #38698b;
+  font-weight: 300;
+position: relative;
+z-index: 66;
+}
+
+.titel-streg {
+  background-image: url(billeder/full-line.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jesper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+ padding-right: 90px;
+  z-index: 65;
+}
+
+.jesper-streg {
+  background-image: url(billeder/jesper-line.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.omos-p {
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #8e9496;
+    letter-spacing: 1.5px;
+ margin: 20px 20% 50px 20%;
+ }
 
     }
 
