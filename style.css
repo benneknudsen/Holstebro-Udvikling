@@ -73,7 +73,7 @@ pointer-events: none;
 /* logo bar slut */
 
 .logo-mobil {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   margin-top: 20px;
   margin-left: 20px;
@@ -1493,7 +1493,7 @@ z-index: 66;
     }
 
 
-    @media only screen and (min-width: 1258px) {
+    @media only screen and (min-width: 1200px) {
 
 /* Logo bar */
 
@@ -2809,7 +2809,7 @@ z-index: 66;
 
     }
 
-    @media only screen and (min-width: 1258px) and (max-width: 1400px) {
+    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
 
       .project-nav {
         display: none;
