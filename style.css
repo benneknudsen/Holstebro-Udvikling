@@ -59,9 +59,8 @@ pointer-events: none;
 .project1 {
   display: inline-flex;
   margin-top: 50px;
-  float: right;
-  margin-right: 15%;
-  
+  float: 0;
+  margin-left: -10px;
 }
 
 .project-nav {
@@ -254,6 +253,13 @@ top: 0;
   text-decoration: none;
 }
 
+#drawerm  {
+  display: block;
+  padding: 35px;
+  color: #7191a3;
+  text-decoration: none;
+}
+
 #drawerm ul a:hover {
   color: #0c3044;
 }
@@ -376,11 +382,13 @@ top: 0;
 }
 
 .icon-m {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
+  display: flex;
+  width: 35px;
+  height: 30px;
   pointer-events: visible;
   background-size: contain;
+ background-repeat: no-repeat;
+ 
  
 }
 
